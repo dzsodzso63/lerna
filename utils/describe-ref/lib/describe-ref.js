@@ -16,8 +16,13 @@ function getArgs(options) {
     "--long",
     // annotate if uncommitted changes present
     "--dirty",
+    // *******
+    //
+    // patched to fix issue: https://github.com/lerna/lerna/issues/1747
+    // 
+    // *******
     // prefer tags originating on upstream branch
-    "--first-parent",
+    // "--first-parent",
   ];
 
   if (options.match) {
